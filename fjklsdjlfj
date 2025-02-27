@@ -1,0 +1,10 @@
+user.name=nataleesama
+user.email=nataleesama@gmail.com
+safe.directory='%(prefix)///psf/Home/Desktop/eCommerce2025'
+safe.directory='Mac/Home/Desktop/eCommerce2025'
+safe.directory='C:/Mac/Home/Desktop/eCommerce2025'
+safe.directory=C:/Mac/Home/Desktop/eCommerce2025
+safe.directory=C:/Mac/Home/Desktop/eCommerce2025
+safe.directory=C:\\Mac\\Home\\Desktop\\eCommerce2025
+safe.directory=C:\Mac\Home\Desktop\eCommerce2025
+safe.directory=C:\Mac\Home\Desktop\eCommerce2025
