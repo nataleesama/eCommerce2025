@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qBmDf/glUOI=",
+  "dgSpecHash": "muvbPkkiiEQ=",
   "success": true,
-  "projectFilePath": "Y:\\Desktop\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj",
+  "projectFilePath": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nataleesama\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\nataleesama\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

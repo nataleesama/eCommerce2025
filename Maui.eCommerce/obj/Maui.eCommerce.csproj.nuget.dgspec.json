@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Y:\\Desktop\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj": {}
+    "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj": {}
   },
   "projects": {
-    "Y:\\Desktop\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj": {
+    "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Y:\\Desktop\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj",
+        "projectUniqueName": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj",
         "projectName": "Maui.eCommerce",
-        "projectPath": "Y:\\Desktop\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj",
+        "projectPath": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj",
         "packagesPath": "C:\\Users\\nataleesama\\.nuget\\packages\\",
-        "outputPath": "Y:\\Desktop\\eCommerce2025\\Maui.eCommerce\\obj\\",
+        "outputPath": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Maui.eCommerce\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

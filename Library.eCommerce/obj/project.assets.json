@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Y:\\Desktop\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj",
+      "projectUniqueName": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj",
       "projectName": "Library.eCommerce",
-      "projectPath": "Y:\\Desktop\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj",
+      "projectPath": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj",
       "packagesPath": "C:\\Users\\nataleesama\\.nuget\\packages\\",
-      "outputPath": "Y:\\Desktop\\eCommerce2025\\Library.eCommerce\\obj\\",
+      "outputPath": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Library.eCommerce\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

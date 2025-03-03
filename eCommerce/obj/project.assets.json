@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Y:\\Desktop\\eCommerce2025\\eCommerce\\eCommerce.csproj",
+      "projectUniqueName": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\eCommerce\\eCommerce.csproj",
       "projectName": "eCommerce",
-      "projectPath": "Y:\\Desktop\\eCommerce2025\\eCommerce\\eCommerce.csproj",
+      "projectPath": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\eCommerce\\eCommerce.csproj",
       "packagesPath": "C:\\Users\\nataleesama\\.nuget\\packages\\",
-      "outputPath": "Y:\\Desktop\\eCommerce2025\\eCommerce\\obj\\",
+      "outputPath": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\eCommerce\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +59,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "Y:\\Desktop\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj": {
-              "projectPath": "Y:\\Desktop\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj"
+            "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj": {
+              "projectPath": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj"
             }
           }
         }
