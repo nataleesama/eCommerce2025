@@ -4,7 +4,13 @@
              x:Class="Maui.eCommerce.MainPage">
 
     <ScrollView>
-      
+        <VerticalStackLayout>
+            <Button
+                Text="Inventory Management"
+                Clicked="InventoryClicked"/>
+            <Button
+                Text="Shop"/>
+        </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>

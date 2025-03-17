@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Maui.eCommerce")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9bbc88628a041647909be00abffdac7aec55dcda")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+15640870b9eee1600fc955f59ecf12293f83795d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Maui.eCommerce")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Maui.eCommerce")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

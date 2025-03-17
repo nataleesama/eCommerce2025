@@ -11,6 +11,14 @@
       "RelativeMoniker": "D:0:0:{06F5F977-A582-4057-A761-0DEE5E5A0570}|Maui.eCommerce\\Maui.eCommerce.csproj|solutionrelative:maui.ecommerce\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{06F5F977-A582-4057-A761-0DEE5E5A0570}|Maui.eCommerce\\Maui.eCommerce.csproj|c:\\users\\nataleesama\\source\\repos\\ecommerce2025\\maui.ecommerce\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{06F5F977-A582-4057-A761-0DEE5E5A0570}|Maui.eCommerce\\Maui.eCommerce.csproj|solutionrelative:maui.ecommerce\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F5F977-A582-4057-A761-0DEE5E5A0570}|Maui.eCommerce\\Maui.eCommerce.csproj|c:\\users\\nataleesama\\source\\repos\\ecommerce2025\\maui.ecommerce\\views\\inventorymanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{06F5F977-A582-4057-A761-0DEE5E5A0570}|Maui.eCommerce\\Maui.eCommerce.csproj|solutionrelative:maui.ecommerce\\views\\inventorymanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8FA08E3E-DD8A-4487-9D8E-0793EEBC1F49}|eCommerce\\eCommerce.csproj|c:\\users\\nataleesama\\source\\repos\\ecommerce2025\\ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FA08E3E-DD8A-4487-9D8E-0793EEBC1F49}|eCommerce\\eCommerce.csproj|solutionrelative:ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,11 +42,33 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\AppShell.xaml",
+              "RelativeDocumentMoniker": "Maui.eCommerce\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\AppShell.xaml",
+              "RelativeToolTip": "Maui.eCommerce\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T15:52:13.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InventoryManagementView.xaml",
+              "DocumentMoniker": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\Views\\InventoryManagementView.xaml",
+              "RelativeDocumentMoniker": "Maui.eCommerce\\Views\\InventoryManagementView.xaml",
+              "ToolTip": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\Views\\InventoryManagementView.xaml",
+              "RelativeToolTip": "Maui.eCommerce\\Views\\InventoryManagementView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T15:50:20.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,7 +78,7 @@
               "RelativeDocumentMoniker": "Maui.eCommerce\\MainPage.xaml",
               "ToolTip": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\MainPage.xaml",
               "RelativeToolTip": "Maui.eCommerce\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-14T16:26:22.137Z",
               "EditorCaption": ""
@@ -61,14 +91,14 @@
               "RelativeDocumentMoniker": "Maui.eCommerce\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\MainPage.xaml.cs",
               "RelativeToolTip": "Maui.eCommerce\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-03T16:35:07.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\eCommerce\\Program.cs",
               "RelativeDocumentMoniker": "eCommerce\\Program.cs",
