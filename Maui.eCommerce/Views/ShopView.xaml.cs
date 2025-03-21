@@ -1,8 +1,8 @@
 namespace Maui.eCommerce.Views;
 
-public partial class InventoryManagementView : ContentPage
+public partial class ShopView : ContentPage
 {
-	public InventoryManagementView()
+	public ShopView()
 	{
 		InitializeComponent();
 	}
