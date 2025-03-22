@@ -2206,6 +2206,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-android34.0/android-arm": {
@@ -4412,6 +4422,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -6620,6 +6640,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-android34.0/android-x64": {
@@ -8826,6 +8856,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -11034,6 +11074,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-android34.0/iossimulator-arm64": {
@@ -13240,6 +13290,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -15448,6 +15508,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-android34.0/win10-arm64": {
@@ -17655,6 +17725,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-ios18.0": {
@@ -18075,6 +18155,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -18497,6 +18587,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-ios18.0/android-arm64": {
@@ -18917,6 +19017,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -19339,6 +19449,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-ios18.0/android-x86": {
@@ -19759,6 +19879,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -20181,6 +20311,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-ios18.0/maccatalyst-arm64": {
@@ -20601,6 +20741,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -21023,6 +21173,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0": {
@@ -21443,6 +21603,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -21865,6 +22035,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0/android-arm64": {
@@ -22285,6 +22465,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -22707,6 +22897,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0/android-x86": {
@@ -23127,6 +23327,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -23549,6 +23759,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0/maccatalyst-arm64": {
@@ -23970,6 +24190,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0/win10-arm64": {
@@ -24390,6 +24620,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -24981,6 +25221,16 @@
             "rid": "win10-x86"
           }
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/android-arm": {
@@ -25530,6 +25780,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -26081,6 +26341,16 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/android-x64": {
@@ -26630,6 +26900,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -27181,6 +27461,16 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/iossimulator-arm64": {
@@ -27731,6 +28021,16 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/maccatalyst-arm64": {
@@ -28280,6 +28580,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     },
@@ -28836,6 +29146,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Library.eCommerce/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.eCommerce.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.eCommerce.dll": {}
         }
       }
     }
@@ -33133,28 +33453,37 @@
         "xamarin.kotlinx.coroutines.core.jvm.1.7.2.1.nupkg.sha512",
         "xamarin.kotlinx.coroutines.core.jvm.nuspec"
       ]
+    },
+    "Library.eCommerce/1.0.0": {
+      "type": "project",
+      "path": "../Library.eCommerce/Library.eCommerce.csproj",
+      "msbuildProject": "../Library.eCommerce/Library.eCommerce.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-android34.0": [
+      "Library.eCommerce >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.100",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.100",
       "Microsoft.NET.ILLink.Tasks >= 8.0.13"
     ],
     "net8.0-ios18.0": [
+      "Library.eCommerce >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.100",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.100",
       "Microsoft.NET.ILLink.Tasks >= 8.0.13"
     ],
     "net8.0-maccatalyst18.0": [
+      "Library.eCommerce >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.100",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.100",
       "Microsoft.NET.ILLink.Tasks >= 8.0.13"
     ],
     "net8.0-windows10.0.19041": [
+      "Library.eCommerce >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.100",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.100"
@@ -33167,11 +33496,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj",
+      "projectUniqueName": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj",
       "projectName": "Maui.eCommerce",
-      "projectPath": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj",
+      "projectPath": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Maui.eCommerce\\Maui.eCommerce.csproj",
       "packagesPath": "C:\\Users\\nataleesama\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\obj\\",
+      "outputPath": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Maui.eCommerce\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -33196,19 +33525,35 @@
       "frameworks": {
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj": {
+              "projectPath": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj"
+            }
+          }
         },
         "net8.0-ios18.0": {
           "targetAlias": "net8.0-ios",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj": {
+              "projectPath": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj"
+            }
+          }
         },
         "net8.0-maccatalyst18.0": {
           "targetAlias": "net8.0-maccatalyst",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj": {
+              "projectPath": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj"
+            }
+          }
         },
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj": {
+              "projectPath": "C:\\Users\\nataleesama\\Source\\Repos\\eCommerce2025\\Library.eCommerce\\Library.eCommerce.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

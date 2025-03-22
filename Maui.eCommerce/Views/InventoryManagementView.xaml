@@ -8,6 +8,8 @@
             Text="Inventory Management"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <ListView
+            ItemsSource="{Binding Products}"/>
         <Button
             Text="Go Back"
             Clicked="CancelClicked"/>
