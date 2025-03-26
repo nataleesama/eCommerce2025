@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,26 +74,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\ViewModels\\AddViewModel.cs",
-              "RelativeDocumentMoniker": "Maui.eCommerce\\ViewModels\\AddViewModel.cs",
-              "ToolTip": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\ViewModels\\AddViewModel.cs",
-              "RelativeToolTip": "Maui.eCommerce\\ViewModels\\AddViewModel.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T16:01:16.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AddView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\Views\\AddView.xaml.cs",
               "RelativeDocumentMoniker": "Maui.eCommerce\\Views\\AddView.xaml.cs",
               "ToolTip": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\Views\\AddView.xaml.cs",
               "RelativeToolTip": "Maui.eCommerce\\Views\\AddView.xaml.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAowCMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T19:20:38.785Z",
               "EditorCaption": ""
@@ -222,6 +209,40 @@
               "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-22T17:50:41.218Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "9c232796-bcbb-4c2e-9700-a3b47a5cbe01",
+        "Display": 0,
+        "X": 7,
+        "Y": 72,
+        "Width": 1073,
+        "Height": 584,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\ViewModels\\AddViewModel.cs",
+              "RelativeDocumentMoniker": "Maui.eCommerce\\ViewModels\\AddViewModel.cs",
+              "ToolTip": "C:\\Users\\nataleesama\\source\\repos\\eCommerce2025\\Maui.eCommerce\\ViewModels\\AddViewModel.cs",
+              "RelativeToolTip": "Maui.eCommerce\\ViewModels\\AddViewModel.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwB0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T16:01:16.422Z",
               "EditorCaption": ""
             }
           ]

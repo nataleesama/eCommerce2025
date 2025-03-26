@@ -21,8 +21,7 @@ public partial class AddView : ContentPage
 
     private void EnterClicked(object sender, EventArgs e)
     {
-        var name = (BindingContext as AddViewModel)?.Name;
-        ProductServiceProxy.Current.AddOrUpdate(new Product {Name = name});
+        (BindingContext as AddViewModel).AddOrUpdate();
         Shell.Current.GoToAsync("//InventoryManagement");
     }
 

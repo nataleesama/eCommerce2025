@@ -1,4 +1,5 @@
 ﻿using eCommerce.Models;
+using Library.eCommerce.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,11 @@ namespace Maui.eCommerce.ViewModels
         }
 
         public Product? Model { get; set; }
+
+        public void AddOrUpdate()
+        {
+            ProductServiceProxy.Current.AddOrUpdate(Model);
+        }
 
         public AddViewModel()
         {
