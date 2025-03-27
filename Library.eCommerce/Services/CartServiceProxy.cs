@@ -7,10 +7,10 @@ namespace Library.eCommerce.Services
     {
         private CartServiceProxy()
         {
-            Cart = new Dictionary<Product?, int>();
+            Cart = new Dictionary<Product, int>();
         }
 
-        public Dictionary<Product?, int> Cart { get; private set; }
+        public Dictionary<Product, int> Cart { get; private set; }
         private static CartServiceProxy? cart;
 
         public static CartServiceProxy Current
@@ -26,10 +26,10 @@ namespace Library.eCommerce.Services
         }
 
 
-        public int AddToCart(Product product, int amount)
+        public int AddToCart(Product? product, int amount)
         {
             int add = 1;
-            if (Cart.ContainsKey(product))
+            if (product != null && Cart.ContainsKey(product))
             {
                 if (amount != 1)
                 {

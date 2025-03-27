@@ -17,6 +17,11 @@ public partial class ShopView : ContentPage
 
     private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
     {
-        (BindingContext as ShopViewModel)?.RefreshProductList();
+        (BindingContext as ShopViewModel)?.RefreshLists();
+    }
+
+    private void AddClicked(object sender, EventArgs e)
+    {
+        (BindingContext as ShopViewModel)?.AddToCart();
     }
 }

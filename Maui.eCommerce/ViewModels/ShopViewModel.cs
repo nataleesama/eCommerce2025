@@ -15,6 +15,7 @@ namespace Maui.eCommerce.ViewModels
     {
         public Product? SelectedProduct { get; set; }
         private ProductServiceProxy _svc = ProductServiceProxy.Current;
+        private CartServiceProxy _cartsvc = CartServiceProxy.Current;
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -27,9 +28,10 @@ namespace Maui.eCommerce.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public void RefreshProductList()
+        public void RefreshLists()
         {
             NotifyPropertyChanged(nameof(Products));
+            //NotifyPropertyChanged(nameof(Cart));
         }
         public ObservableCollection<Product?> Products
         {
@@ -37,6 +39,23 @@ namespace Maui.eCommerce.ViewModels
             {
                 return new ObservableCollection<Product?>(_svc.Products);
             }
+        }
+
+        public ObservableCollection<KeyValuePair<Product, int>> Cart
+        {
+            get
+            {
+                return new ObservableCollection<KeyValuePair<Product, int>>(_cartsvc.Cart);
+            }
+        }
+
+        public int AddToCart()
+        {
+            var id =_cartsvc.AddToCart(SelectedProduct ?? null, 1);
+            var item = _svc.Delete(SelectedProduct?.Id ?? 0);
+            RefreshLists();
+            //NotifyPropertyChanged("Cart");
+            return id;
         }
     }
 }
