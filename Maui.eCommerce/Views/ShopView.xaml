@@ -42,6 +42,9 @@
             Text="Add"
             Clicked="AddClicked"/>
         <Button
+            Text="Remove"
+            Clicked="RemoveClicked"/>
+        <Button
             Text="Back to Home"
             Clicked="CancelClicked"/>
     </VerticalStackLayout>

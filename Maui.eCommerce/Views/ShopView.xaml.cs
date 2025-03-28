@@ -24,4 +24,9 @@ public partial class ShopView : ContentPage
     {
         (BindingContext as ShopViewModel)?.AddToCart();
     }
+
+    private void RemoveClicked(object sender, EventArgs e)
+    {
+        (BindingContext as ShopViewModel)?.RemoveFromCart();
+    }
 }

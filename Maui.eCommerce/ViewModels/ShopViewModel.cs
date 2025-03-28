@@ -1,4 +1,5 @@
 ﻿using eCommerce.Models;
+using Library.eCommerce.Models;
 using Library.eCommerce.Services;
 using System;
 using System.Collections.Generic;
@@ -31,7 +32,7 @@ namespace Maui.eCommerce.ViewModels
         public void RefreshLists()
         {
             NotifyPropertyChanged(nameof(Products));
-            //NotifyPropertyChanged(nameof(Cart));
+            NotifyPropertyChanged(nameof(Cart));
         }
         public ObservableCollection<Product?> Products
         {
@@ -41,21 +42,40 @@ namespace Maui.eCommerce.ViewModels
             }
         }
 
-        public ObservableCollection<KeyValuePair<Product, int>> Cart
+        public ObservableCollection<ProductInCart?> Cart
         {
             get
             {
-                return new ObservableCollection<KeyValuePair<Product, int>>(_cartsvc.Cart);
+                return new ObservableCollection<ProductInCart?>(_cartsvc.Cart);
             }
         }
 
         public int AddToCart()
         {
-            var id =_cartsvc.AddToCart(SelectedProduct ?? null, 1);
-            var item = _svc.Delete(SelectedProduct?.Id ?? 0);
-            RefreshLists();
+            if(SelectedProduct != null && SelectedProduct.Quantity != 0)
+            {
+                var id = _cartsvc.AddToCart(SelectedProduct ?? null, 1);
+                SelectedProduct.Quantity -= 1;
+                var item = _svc.AddOrUpdate(SelectedProduct);
+                RefreshLists();
+                return id;
+            }
+
             //NotifyPropertyChanged("Cart");
-            return id;
+            return -1;
+        }
+
+        public int RemoveFromCart()
+        {
+            if (SelectedProduct != null)
+            {
+                var id = _cartsvc.Delete(SelectedProduct, 1);
+                SelectedProduct.Quantity += 1;
+                var item = _svc.AddOrUpdate(SelectedProduct);
+                RefreshLists();
+                return id;
+            }
+            return -1;
         }
     }
 }

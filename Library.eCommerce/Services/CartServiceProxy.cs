@@ -1,5 +1,6 @@
 ﻿
 using eCommerce.Models;
+using Library.eCommerce.Models;
 
 namespace Library.eCommerce.Services
 {
@@ -7,10 +8,10 @@ namespace Library.eCommerce.Services
     {
         private CartServiceProxy()
         {
-            Cart = new Dictionary<Product, int>();
+            Cart = new List<ProductInCart?>{ };
         }
 
-        public Dictionary<Product, int> Cart { get; private set; }
+        public List<ProductInCart?> Cart { get; private set; }
         private static CartServiceProxy? cart;
 
         public static CartServiceProxy Current
@@ -29,39 +30,43 @@ namespace Library.eCommerce.Services
         public int AddToCart(Product? product, int amount)
         {
             int add = 1;
-            if (product != null && Cart.ContainsKey(product))
+            ProductInCart? selectedProduct = Cart.FirstOrDefault(p => p.item.Id == product.Id);
+            if (selectedProduct != null)
             {
                 if (amount != 1)
                 {
-                    add = amount - Cart[product];
-                    Cart[product] += add;
+                    add = amount - selectedProduct.cartQuantity;
+                    selectedProduct.cartQuantity += add;
                 }
                 else
                 {
-                    Cart[product] += amount;
+                    selectedProduct.cartQuantity += amount;
                 }
             }
             else
             {
-                Cart.Add(product, amount);
+                ProductInCart? newProduct = new ProductInCart(product);
+                newProduct.cartQuantity = 1;
+                Cart.Add(newProduct);
             }
             return add;
         }
 
-        public int Delete(Product product, int total)
+        public int Delete(Product product, int totalRemoved)
         {
             int count = 0;
-            if (Cart.ContainsKey(product))
+            ProductInCart? selectedProduct = Cart.FirstOrDefault(p => p.item.Id == product.Id);
+            if (selectedProduct != null)
             {
-                if (total > 0)
+                if (selectedProduct.cartQuantity - totalRemoved > 0)
                 {
-                    count = Cart[product] - total;
-                    Cart[product] = total;
+                    count = selectedProduct.cartQuantity - totalRemoved;
+                    selectedProduct.cartQuantity = count;
                 }
                 else
                 {
-                    count = Cart[product];
-                    Cart.Remove(product);
+                    count = selectedProduct.cartQuantity;
+                    Cart.Remove(selectedProduct);
                 }
             }
             return count;
