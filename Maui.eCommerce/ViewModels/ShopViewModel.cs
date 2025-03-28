@@ -70,8 +70,8 @@ namespace Maui.eCommerce.ViewModels
         {
             if (SelectedProdCart != null && SelectedProdCart.inCart == true)
             {
-                var id = _cartsvc.Delete(SelectedProdCart.item, 1);
-                SelectedProdCart.item.Quantity += 1;
+                var id = _cartsvc.Delete(SelectedProdCart.item, SelectedProdCart.cartQuantity);
+                SelectedProdCart.item.Quantity += SelectedProdCart.cartQuantity;
                 var item = _svc.AddOrUpdate(SelectedProdCart.item);
                 RefreshLists();
                 return id;
