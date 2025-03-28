@@ -47,6 +47,7 @@ namespace Library.eCommerce.Services
             {
                 ProductInCart? newProduct = new ProductInCart(product);
                 newProduct.cartQuantity = 1;
+                newProduct.inCart = true;
                 Cart.Add(newProduct);
             }
             return add;
@@ -65,6 +66,7 @@ namespace Library.eCommerce.Services
                 }
                 else
                 {
+                    selectedProduct.inCart = false;
                     count = selectedProduct.cartQuantity;
                     Cart.Remove(selectedProduct);
                 }

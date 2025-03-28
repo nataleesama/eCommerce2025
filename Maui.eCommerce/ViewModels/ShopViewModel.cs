@@ -15,6 +15,7 @@ namespace Maui.eCommerce.ViewModels
     public class ShopViewModel : INotifyPropertyChanged
     {
         public Product? SelectedProduct { get; set; }
+        public ProductInCart? SelectedProdCart { get; set; }
         private ProductServiceProxy _svc = ProductServiceProxy.Current;
         private CartServiceProxy _cartsvc = CartServiceProxy.Current;
 
@@ -67,11 +68,11 @@ namespace Maui.eCommerce.ViewModels
 
         public int RemoveFromCart()
         {
-            if (SelectedProduct != null)
+            if (SelectedProdCart != null && SelectedProdCart.inCart == true)
             {
-                var id = _cartsvc.Delete(SelectedProduct, 1);
-                SelectedProduct.Quantity += 1;
-                var item = _svc.AddOrUpdate(SelectedProduct);
+                var id = _cartsvc.Delete(SelectedProdCart.item, 1);
+                SelectedProdCart.item.Quantity += 1;
+                var item = _svc.AddOrUpdate(SelectedProdCart.item);
                 RefreshLists();
                 return id;
             }

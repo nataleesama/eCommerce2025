@@ -28,6 +28,7 @@
             </ListView>
             <ListView
                 ItemsSource="{Binding Cart}"
+                SelectedItem="{Binding SelectedProdCart}"
                 Grid.Column="1">
                 <ListView.ItemTemplate>
                     <DataTemplate>

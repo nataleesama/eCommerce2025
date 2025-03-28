@@ -14,6 +14,8 @@ namespace Library.eCommerce.Models
         public Product item { get; set; }
         public int cartQuantity { get; set; }
 
+        public bool inCart { get; set; }
+
         public string? Display
         {
             get
@@ -25,6 +27,7 @@ namespace Library.eCommerce.Models
         public ProductInCart()
         {
             item = new Product();
+            inCart = false;
             cartQuantity = 0;
         }
 
@@ -33,10 +36,12 @@ namespace Library.eCommerce.Models
         {
             item = p.item;
             cartQuantity = p.cartQuantity;
+            inCart = p.inCart;
         }
         public ProductInCart(Product p)
         {
             item = p;
+            inCart = false;
             cartQuantity = 0;
         }
 
