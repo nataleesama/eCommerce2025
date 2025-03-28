@@ -2,12 +2,49 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Maui.eCommerce.Views.ShopView"
-             Title="ShopView">
+             Title="ShopView"
+             NavigatedTo="ContentPage_NavigatedTo">
     <VerticalStackLayout>
         <Label 
             Text="Begin Shopping"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ListView
+                ItemsSource="{Binding Products}"
+                SelectedItem="{Binding SelectedProduct}"
+                Grid.Column="0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding Display}"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView
+                ItemsSource="{Binding Cart}"
+                SelectedItem="{Binding SelectedProdCart}"
+                Grid.Column="1">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding Display}"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <Button 
+            Text="Add"
+            Clicked="AddClicked"/>
+        <Button
+            Text="Remove"
+            Clicked="RemoveClicked"/>
         <Button
             Text="Back to Home"
             Clicked="CancelClicked"/>
