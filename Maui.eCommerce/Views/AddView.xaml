@@ -11,7 +11,21 @@
             HorizontalOptions="Center" />
         <Entry
             Text="{Binding Name}"/>
-        
+
+        <Label 
+            Text="Price: "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry
+            Text="{Binding Price}"/>
+
+        <Label 
+            Text="Quantity: "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry
+            Text="{Binding Quantity}"/>
+
         <Button
             Text="Enter"
             Clicked="EnterClicked"/>

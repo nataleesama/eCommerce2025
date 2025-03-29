@@ -63,7 +63,7 @@ namespace Library.eCommerce.Services
             return product;
         }
 
-        public Product Delete(int id)
+        public Product? Delete(int id)
         {
             if (id == 0)
             {

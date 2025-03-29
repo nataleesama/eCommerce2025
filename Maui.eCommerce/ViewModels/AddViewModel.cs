@@ -25,11 +25,49 @@ namespace Maui.eCommerce.ViewModels
             }
         }
 
+        public double? Price
+        {
+            get
+            {
+                return Model?.Price ?? null;
+            }
+            set
+            {
+                if(Model != null && Model.Price != value)
+                {
+                    double valueToTenth = Math.Round(value ?? 0, 2);
+                    Model.Price = valueToTenth;
+                }
+            }
+        }
+
+        public int? Quantity
+        {
+            get
+            {
+                return Model?.Quantity ?? null;
+            }
+            set
+            {
+                if (Model != null && Model.Quantity != value)
+                {
+                    Model.Quantity = value;
+                }
+            }
+        }
+
         public Product? Model { get; set; }
 
-        public void AddOrUpdate()
+        public bool AddOrUpdate()
         {
-            ProductServiceProxy.Current.AddOrUpdate(Model);
+            if(Model.Name != String.Empty &&
+                Model.Price != null &&
+                Model.Quantity != null)
+            {
+                ProductServiceProxy.Current.AddOrUpdate(Model);
+                return true;
+            }
+            return false;
         }
 
         public AddViewModel()

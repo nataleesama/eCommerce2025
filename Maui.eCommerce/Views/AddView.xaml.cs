@@ -21,8 +21,11 @@ public partial class AddView : ContentPage
 
     private void EnterClicked(object sender, EventArgs e)
     {
-        (BindingContext as AddViewModel).AddOrUpdate();
-        Shell.Current.GoToAsync("//InventoryManagement");
+        var result = (BindingContext as AddViewModel).AddOrUpdate();
+        if(result == true)
+        {
+            Shell.Current.GoToAsync("//InventoryManagement");
+        }
     }
 
     private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
