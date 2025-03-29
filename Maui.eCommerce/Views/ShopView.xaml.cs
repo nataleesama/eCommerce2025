@@ -29,4 +29,9 @@ public partial class ShopView : ContentPage
     {
         (BindingContext as ShopViewModel)?.RemoveFromCart();
     }
+
+    private void CheckoutClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//Receipt");
+    }
 }

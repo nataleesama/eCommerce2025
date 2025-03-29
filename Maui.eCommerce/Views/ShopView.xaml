@@ -46,6 +46,9 @@
             Text="Remove"
             Clicked="RemoveClicked"/>
         <Button
+            Text="Checkout"
+            Clicked="CheckoutClicked"/>
+        <Button
             Text="Back to Home"
             Clicked="CancelClicked"/>
     </VerticalStackLayout>

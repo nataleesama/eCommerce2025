@@ -60,6 +60,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Maui.eCommerce.Views.Inven
 build_metadata.AdditionalFiles.TargetPath = Views\InventoryManagementView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\InventoryManagementView.xaml
 
+[C:/Users/nataleesama/Source/Repos/eCommerce2025/Maui.eCommerce/Views/ReceiptView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Maui.eCommerce.Views.ReceiptView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ReceiptView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ReceiptView.xaml
+
 [C:/Users/nataleesama/Source/Repos/eCommerce2025/Maui.eCommerce/Views/ShopView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Maui.eCommerce.Views.ShopView.xaml
