@@ -29,6 +29,10 @@
         <Button
             Text="Enter"
             Clicked="EnterClicked"/>
+        <Label 
+            Text="{Binding Message}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
         <Button
             Text="Go Back"
             Clicked="CancelClicked"/>

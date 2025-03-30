@@ -5,7 +5,45 @@
              Title="ReceiptView">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="---------Receipt---------"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="--------------------------"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <ListView
+            ItemsSource="{Binding Cart}"
+            SelectedItem="{Binding SelectedProdCart}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Grid.Column="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding Display}"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label 
+            Text="---------------------------"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="{Binding PreTax, StringFormat = 'Cart Amount: ${0}'}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="{Binding Tax, StringFormat = '7% Tax: ${0}'}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="{Binding PostTax, StringFormat = 'Total: ${0}'}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="---------------------------"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Button

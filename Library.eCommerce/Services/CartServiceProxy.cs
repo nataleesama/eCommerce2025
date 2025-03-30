@@ -79,5 +79,15 @@ namespace Library.eCommerce.Services
             Cart.Clear();
         }
 
+        public double GetTotal()
+        {
+            double total = 0;
+            foreach (var item in Cart)
+            {
+                total += item?.item.Price ?? 0 * item?.cartQuantity ?? 0;
+            }
+            return total;
+        }
+
     };
 }

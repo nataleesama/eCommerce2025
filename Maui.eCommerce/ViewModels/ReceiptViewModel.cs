@@ -13,6 +13,30 @@ namespace Maui.eCommerce.ViewModels
     {
         private CartServiceProxy _cartsvc = CartServiceProxy.Current;
 
+        public double PreTax
+        {
+            get
+            {
+                return _cartsvc.GetTotal();
+            }
+        }
+
+        public double Tax
+        {
+            get
+            {
+                return _cartsvc.GetTotal() * .07;
+            }
+        }
+
+        public double PostTax
+        {
+            get
+            {
+                return _cartsvc.GetTotal() * 1.07;
+            }
+        }
+
         public ObservableCollection<ProductInCart?> Cart
         {
             get
