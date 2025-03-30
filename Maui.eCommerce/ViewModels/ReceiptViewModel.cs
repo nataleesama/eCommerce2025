@@ -3,21 +3,33 @@ using Library.eCommerce.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Maui.eCommerce.ViewModels
 {
-    public class ReceiptViewModel
+    public class ReceiptViewModel : INotifyPropertyChanged
     {
         private CartServiceProxy _cartsvc = CartServiceProxy.Current;
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            if (propertyName is null)
+            {
+                throw new ArgumentNullException(nameof(propertyName));
+            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         public double PreTax
         {
             get
             {
-                return _cartsvc.GetTotal();
+                return Math.Round(_cartsvc.GetTotal(), 2);
             }
         }
 
@@ -25,7 +37,7 @@ namespace Maui.eCommerce.ViewModels
         {
             get
             {
-                return _cartsvc.GetTotal() * .07;
+                return Math.Round(_cartsvc.GetTotal() * .07, 2);
             }
         }
 
@@ -33,7 +45,7 @@ namespace Maui.eCommerce.ViewModels
         {
             get
             {
-                return _cartsvc.GetTotal() * 1.07;
+                return Math.Round(_cartsvc.GetTotal() * 1.07,2);
             }
         }
 
@@ -43,6 +55,14 @@ namespace Maui.eCommerce.ViewModels
             {
                 return new ObservableCollection<ProductInCart?>(_cartsvc.Cart);
             }
+        }
+
+        public void RefreshReceipt() 
+        {
+            NotifyPropertyChanged(nameof(Cart));
+            NotifyPropertyChanged(nameof(PreTax));
+            NotifyPropertyChanged(nameof(Tax));
+            NotifyPropertyChanged(nameof(PostTax));
         }
 
         public void DropCart()

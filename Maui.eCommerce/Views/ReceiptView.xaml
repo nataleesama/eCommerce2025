@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Maui.eCommerce.Views.ReceiptView"
-             Title="ReceiptView">
+             Title="ReceiptView"
+             NavigatedTo="ContentPage_NavigatedTo">
     <VerticalStackLayout>
         <Label 
             Text="---------Receipt---------"
@@ -14,14 +15,13 @@
             HorizontalOptions="Center" />
         <ListView
             ItemsSource="{Binding Cart}"
-            SelectedItem="{Binding SelectedProdCart}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            Grid.Column="1">
+            SelectedItem="{Binding SelectedProdCart}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Label Text="{Binding Display}"/>
+                        <Label Text="{Binding Display}"
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Center"/>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

@@ -4,9 +4,9 @@ namespace Maui.eCommerce.Views;
 
 public partial class ReceiptView : ContentPage
 {
-	public ReceiptView()
-	{
-		InitializeComponent();
+    public ReceiptView()
+    {
+        InitializeComponent();
         BindingContext = new ReceiptViewModel();
     }
 
@@ -14,5 +14,10 @@ public partial class ReceiptView : ContentPage
     {
         (BindingContext as ReceiptViewModel)?.DropCart();
         Shell.Current.GoToAsync("//MainPage");
+    }
+
+    private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
+    {
+        (BindingContext as ReceiptViewModel)?.RefreshReceipt();
     }
 }
