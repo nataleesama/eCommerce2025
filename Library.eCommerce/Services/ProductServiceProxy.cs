@@ -59,8 +59,14 @@ namespace Library.eCommerce.Services
                 product.Id = LastKey + 1;
                 Products.Add(product);
             }
+            else
+            {
+                var existingItem = Products.FirstOrDefault(p => p.Id == product.Id);
+                Products.Remove(existingItem);
+                Products.Add(new Product(product));
+            }
 
-            return product;
+                return product;
         }
 
         public Product? Delete(int id)

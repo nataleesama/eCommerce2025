@@ -12,8 +12,9 @@ namespace Maui.eCommerce.ViewModels
 {
     public class AddViewModel : INotifyPropertyChanged
     {
-        private string _message;
-        public string Message
+        private Product? CachedModel { get; set; }
+        private string? _message;
+        public string? Message
         {
             get
             {
@@ -95,14 +96,24 @@ namespace Maui.eCommerce.ViewModels
             return false;
         }
 
+        public void Undo()
+        {
+            ProductServiceProxy.Current.AddOrUpdate(CachedModel);
+        }
+
         public AddViewModel()
         {
             Model = new Product();
+            CachedModel = null;
         }
 
         public AddViewModel(Product? model)
         {
             Model = model;
+            if(model != null)
+            {
+                CachedModel = new Product(model);
+            }
         }
     }
 }

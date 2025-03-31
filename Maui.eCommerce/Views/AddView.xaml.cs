@@ -16,7 +16,8 @@ public partial class AddView : ContentPage
 
     private void CancelClicked(object sender, EventArgs e)
     {
-		Shell.Current.GoToAsync("//InventoryManagement");
+        (BindingContext as AddViewModel).Undo();
+        Shell.Current.GoToAsync("//InventoryManagement");
     }
 
     private void EnterClicked(object sender, EventArgs e)
