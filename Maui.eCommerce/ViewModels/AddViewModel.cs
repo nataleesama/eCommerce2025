@@ -1,4 +1,5 @@
 ﻿using eCommerce.Models;
+using Library.eCommerce.DTO;
 using Library.eCommerce.Services;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace Maui.eCommerce.ViewModels
 {
     public class AddViewModel : INotifyPropertyChanged
     {
-        private Product? CachedModel { get; set; }
+        private ProductDTO? CachedModel { get; set; }
         private string? _message;
         public string? Message
         {
@@ -81,7 +82,7 @@ namespace Maui.eCommerce.ViewModels
             }
         }
 
-        public Product? Model { get; set; }
+        public ProductDTO? Model { get; set; }
 
         public bool AddOrUpdate()
         {
@@ -103,16 +104,16 @@ namespace Maui.eCommerce.ViewModels
 
         public AddViewModel()
         {
-            Model = new Product();
+            Model = new ProductDTO();
             CachedModel = null;
         }
 
-        public AddViewModel(Product? model)
+        public AddViewModel(ProductDTO? model)
         {
             Model = model;
             if(model != null)
             {
-                CachedModel = new Product(model);
+                CachedModel = new ProductDTO(model);
             }
         }
     }

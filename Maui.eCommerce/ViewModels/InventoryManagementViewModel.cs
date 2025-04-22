@@ -1,4 +1,5 @@
 ﻿using eCommerce.Models;
+using Library.eCommerce.DTO;
 using Library.eCommerce.Services;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace Maui.eCommerce.ViewModels
 {
     public class InventoryManagementViewModel : INotifyPropertyChanged
     {
-        public Product? SelectedProduct { get; set;  }
+        public ProductDTO? SelectedProduct { get; set;  }
         public string? Query { get; set; }
          
         private ProductServiceProxy _svc = ProductServiceProxy.Current; 
@@ -33,16 +34,16 @@ namespace Maui.eCommerce.ViewModels
         {
             NotifyPropertyChanged(nameof(Products));
         }
-        public ObservableCollection<Product?> Products
+        public ObservableCollection<ProductDTO?> Products
         {
             get
             {
                 var filteredList = _svc.Products.Where(p => p?.Name?.ToLower().Contains(Query?.ToLower() ?? string.Empty) ?? false);
-                return new ObservableCollection<Product?>(filteredList);
+                return new ObservableCollection<ProductDTO?>(filteredList);
             }
         }
 
-        public Product? Delete()
+        public ProductDTO? Delete()
         {
             var item = _svc.Delete(SelectedProduct?.Id ?? 0) ;
             NotifyPropertyChanged("Products");

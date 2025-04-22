@@ -1,4 +1,5 @@
 ﻿using eCommerce.Models;
+using Library.eCommerce.DTO;
 using Library.eCommerce.Models;
 using Library.eCommerce.Services;
 using System;
@@ -14,7 +15,7 @@ namespace Maui.eCommerce.ViewModels
 {
     public class ShopViewModel : INotifyPropertyChanged
     {
-        public Product? SelectedProduct { get; set; }
+        public ProductDTO? SelectedProduct { get; set; }
         public ProductInCart? SelectedProdCart { get; set; }
         private ProductServiceProxy _svc = ProductServiceProxy.Current;
         private CartServiceProxy _cartsvc = CartServiceProxy.Current;
@@ -35,11 +36,11 @@ namespace Maui.eCommerce.ViewModels
             NotifyPropertyChanged(nameof(Products));
             NotifyPropertyChanged(nameof(Cart));
         }
-        public ObservableCollection<Product?> Products
+        public ObservableCollection<ProductDTO?> Products
         {
             get
             {
-                return new ObservableCollection<Product?>(_svc.Products);
+                return new ObservableCollection<ProductDTO?>(_svc.Products);
             }
         }
 

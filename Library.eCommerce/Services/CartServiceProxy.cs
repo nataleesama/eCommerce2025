@@ -1,5 +1,6 @@
 ﻿
 using eCommerce.Models;
+using Library.eCommerce.DTO;
 using Library.eCommerce.Models;
 
 namespace Library.eCommerce.Services
@@ -27,7 +28,7 @@ namespace Library.eCommerce.Services
         }
 
 
-        public int AddToCart(Product? product, int amount)
+        public int AddToCart(ProductDTO? product, int amount)
         {
             int add = 1;
             ProductInCart? selectedProduct = Cart.FirstOrDefault(p => p.item.Id == product.Id);
@@ -53,7 +54,7 @@ namespace Library.eCommerce.Services
             return add;
         }
 
-        public int Delete(Product product, int totalRemoved)
+        public int Delete(ProductDTO product, int totalRemoved)
         {
             int count = 0;
             ProductInCart? selectedProduct = Cart.FirstOrDefault(p => p.item.Id == product.Id);

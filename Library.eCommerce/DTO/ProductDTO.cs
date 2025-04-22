@@ -1,13 +1,13 @@
-﻿using Library.eCommerce.DTO;
+﻿using eCommerce.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eCommerce.Models
+namespace Library.eCommerce.DTO
 {
-    public class Product
+    public class ProductDTO
     {
         public int Id { get; set; }
         public string? Name { get; set; }
@@ -23,13 +23,13 @@ namespace eCommerce.Models
                 return $"{Id}. {Name} - ${Price}; {Quantity}";
             }
         }
-        public Product()
+        public ProductDTO()
         {
             Name = string.Empty;
         }
 
         // Copy Constructor
-        public Product(Product p)
+        public ProductDTO(ProductDTO p)
         {
             Name = p.Name;
             Id = p.Id;
@@ -37,7 +37,7 @@ namespace eCommerce.Models
             Price = p.Price;
         }
 
-        public Product(ProductDTO p)
+        public ProductDTO(Product p)
         {
             Name = p.Name;
             Id = p.Id;

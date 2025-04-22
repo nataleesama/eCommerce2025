@@ -1,4 +1,5 @@
 ﻿using eCommerce.Models;
+using Library.eCommerce.DTO;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,7 +12,7 @@ namespace Library.eCommerce.Models
 {
     public class ProductInCart
     {
-        public Product item { get; set; }
+        public ProductDTO item { get; set; }
         public int cartQuantity { get; set; }
 
         public bool inCart { get; set; }
@@ -26,7 +27,7 @@ namespace Library.eCommerce.Models
 
         public ProductInCart()
         {
-            item = new Product();
+            item = new ProductDTO();
             inCart = false;
             cartQuantity = 0;
         }
@@ -38,7 +39,7 @@ namespace Library.eCommerce.Models
             cartQuantity = p.cartQuantity;
             inCart = p.inCart;
         }
-        public ProductInCart(Product p)
+        public ProductInCart(ProductDTO p)
         {
             item = p;
             inCart = false;
