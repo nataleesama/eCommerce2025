@@ -2,6 +2,8 @@
 using eCommerce.Models;
 using Library.eCommerce.DTO;
 using Library.eCommerce.Models;
+using Library.eCommerce.Utilities;
+using Newtonsoft.Json;
 
 namespace Library.eCommerce.Services
 {
@@ -9,7 +11,9 @@ namespace Library.eCommerce.Services
     {
         private CartServiceProxy()
         {
-            Cart = new List<ProductInCart?>{ };
+            //Cart = new List<ProductInCart?>{ };
+            var cartPayload = new WebRequestHandler().Get("/Cart").Result;
+            Cart = JsonConvert.DeserializeObject<List<ProductInCart>>(cartPayload) ?? new List<ProductInCart?>();
         }
 
         public List<ProductInCart?> Cart { get; private set; }
@@ -70,6 +74,12 @@ namespace Library.eCommerce.Services
                     selectedProduct.inCart = false;
                     count = selectedProduct.cartQuantity;
                     Cart.Remove(selectedProduct);
+                    var result = new WebRequestHandler().Delete($"Cart/{product.Id}").Result;
+
+                    ProductInCart? productNeeded = Cart.FirstOrDefault(p => p.item.Id == product.Id);
+                    Cart.Remove(selectedProduct);
+
+                    //return JsonConvert.DeserializeObject<ProductInCart>(result);
                 }
             }
             return count;

@@ -80,9 +80,13 @@ namespace Library.eCommerce.Services
             {
                 return null;
             }
+
+            var result = new WebRequestHandler().Delete($"Inventory/{id}").Result;
+
             ProductDTO? product = Products.FirstOrDefault(p => p.Id == id);
             Products.Remove(product);
-            return product;
+
+            return JsonConvert.DeserializeObject<ProductDTO>(result);
         }
 
         public ProductDTO? GetById(int id)

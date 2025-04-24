@@ -1,4 +1,4 @@
-using API.eCommerce.Controllers.EC;
+using API.eCommerce.EC;
 using Library.eCommerce.DTO;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,5 +20,17 @@ public class InventoryController : ControllerBase
     public IEnumerable<ProductDTO?> Get()
     {
         return new InventoryEC().Get();
+    }
+
+    [HttpGet("{id}")]
+    public ProductDTO? GetById(int id)
+    {
+        return new InventoryEC().Get().FirstOrDefault(p => p?.Id == id);
+    }
+
+    [HttpDelete("{id}")]
+    public ProductDTO? Delete(int id)
+    {
+        return new InventoryEC().Delete(id);
     }
 }
