@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using eCommerce.Models;
 using Library.eCommerce.DTO;
+using Library.eCommerce.Utilities;
+using Newtonsoft.Json;
 
 namespace Library.eCommerce.Services
 {
@@ -12,12 +14,14 @@ namespace Library.eCommerce.Services
     {
         private ProductServiceProxy()
         {
-            Products = new List<ProductDTO?>
-            {
-                new ProductDTO{Id=1, Name = "Product 1", Price = 15.99, Quantity = 5 },
-                new ProductDTO{Id=2, Name = "Product 2", Price = 12.99, Quantity = 3 },
-                new ProductDTO{Id=3, Name = "Product 3", Price = 20.99, Quantity = 2 }
-            };
+            var productPayload = new WebRequestHandler().Get("/Inventory").Result;
+            Products = JsonConvert.DeserializeObject<List<ProductDTO>>(productPayload) ?? new List<ProductDTO?>();
+            //Products = new List<ProductDTO?>
+            //{
+            //    new ProductDTO{Id=1, Name = "Product 1", Price = 15.99, Quantity = 5 },
+            //    new ProductDTO{Id=2, Name = "Product 2", Price = 12.99, Quantity = 3 },
+            //    new ProductDTO{Id=3, Name = "Product 3", Price = 20.99, Quantity = 2 }
+            //};
         }
 
         private int LastKey
