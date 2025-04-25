@@ -5,6 +5,18 @@ namespace API.eCommerce.Database
 {
     public static class FakeDatabase
     {
+        public static int LastKey_Item
+        {
+            get
+            {
+                if (!inventory.Any())
+                {
+                    return 0;
+                }
+                return inventory.Select(p => p?.Id ?? 0).Max();
+            }
+        }
+
         private static List<ProductDTO?> inventory = new List<ProductDTO?>
         {
             new ProductDTO{Id=1, Name = "Product 1 WebTest", Price = 15.99, Quantity = 5 },

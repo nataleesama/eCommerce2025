@@ -33,4 +33,12 @@ public class InventoryController : ControllerBase
     {
         return new InventoryEC().Delete(id);
     }
+
+    [HttpPost]
+    public ProductDTO? AddOrUpdate([FromBody]ProductDTO product)
+    {
+        
+        var newItem = new InventoryEC().AddOrUpdate(product);
+        return newItem;
+    }
 }
